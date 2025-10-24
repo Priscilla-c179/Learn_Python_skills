@@ -1,0 +1,4 @@
+They are called integers in python programming
+booleans are True or false values
+Real numbers represent decimals.float
+complex numbers-2+3j

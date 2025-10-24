@@ -1,0 +1,5 @@
+everything is object in python
+Each object has identity,Type and value
+Mutable is changeable while immutable cannot be changed.
+never check the mutability or immutability with value but use identity to validate.
+we change the reference not the value .sugar_amount=2 and sugar amount=12
