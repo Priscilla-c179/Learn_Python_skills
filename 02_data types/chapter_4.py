@@ -52,3 +52,48 @@ masala_spices =("cardamon","cinnamon", "cloves")
 (spice1,spice2,spice3)= masala_spices
 
 print(f"Main masala spices:{spice1},{spice2},{spice3}")
+
+ginger_ratio,cadarmon_ratio =(2,1)
+print(f"Ratio is G:{ginger_ratio} and C{cadarmon_ratio}")
+ginger_ratio,cadarmon_ratio =cadarmon_ratio,ginger_ratio
+
+# Memberiship
+print(f"Is ginger in masala spices?{'ginger' in masala_spices }")
+
+# List [] is mutable
+ingredients = ["water","milk","black tea"]
+ingredients.append("sugar")
+print(f"Ingredients are: {ingredients}")
+ingredients.remove("water")
+
+spice_options =["ginger","cardamon"]
+chai_ingredients = ["water","milk"]
+
+chai_ingredients.extend(spice_options)
+print(f"chai:{chai_ingredients}")
+chai_ingredients.insert(2, "black tea")
+print(f"chai:{chai_ingredients}")
+last_added = chai_ingredients.pop() # remove from the list and store it in a valuable
+chai_ingredients.reverse()
+print(f"chai:{chai_ingredients}")
+
+chai_ingredients.sort()
+print(f"chai:{chai_ingredients}")
+
+sugar_levels = [1,2,3,4,5]
+print(f"Maximum sugar level:{max(sugar_levels)}")
+print(f"Minimum sugar level:{min(sugar_levels)}")
+
+# operators overloading
+base_liquid=["water","milk"]
+extra_flavor =["ginger"]
+full_liquid_mix = base_liquid + extra_flavor
+print(F'liquid mix {full_liquid_mix}')
+
+strong_brew =["black tea"] * 3
+print(F"strong brew: {strong_brew}")
+
+raw_spice_data = bytearray(b"CINNAMON")
+raw_spice_data=raw_spice_data.replace(b"CINNA",b"CARD")
+print(f"Bytes: {raw_spice_data}")
+
